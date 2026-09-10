@@ -1,0 +1,465 @@
+:host {
+    display: block;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  .app {
+    min-height: 100vh;
+    padding: 32px 18px 80px;
+    background: #fff8ef;
+    color: #5a4034;
+    font-family:
+      -apple-system,
+      BlinkMacSystemFont,
+      "Hiragino Sans",
+      "Yu Gothic",
+      sans-serif;
+  }
+  
+  .header {
+    max-width: 680px;
+    margin: 0 auto 28px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  
+  .logo h1 {
+    margin: 0;
+    font-size: 30px;
+    letter-spacing: 0.04em;
+  }
+  
+  .logo p {
+    margin: 3px 0 0;
+    font-size: 13px;
+    color: #9a7767;
+  }
+  
+  .card,
+  .section {
+    max-width: 680px;
+    margin: 0 auto 22px;
+  }
+  
+  .card {
+    padding: 24px;
+    border-radius: 24px;
+    background: #fffdf9;
+    border: 1px solid #f0dfd1;
+  }
+  
+  .section {
+    padding: 4px 0;
+  }
+  
+  .section-label {
+    margin: 0 0 7px;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    color: #a28373;
+  }
+  
+  .budget-input {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #eadbd0;
+  }
+  
+  .budget-input span {
+    font-size: 22px;
+  }
+  
+  .budget-input input {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: transparent;
+    font-size: 36px;
+    font-weight: 700;
+    color: #5a4034;
+  }
+  
+  .money-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .money-info div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .money-info span {
+    font-size: 12px;
+    color: #a28373;
+  }
+  
+  .money-info strong {
+    font-size: 20px;
+  }
+  
+  .money-info .remaining {
+    color: #9a624b;
+  }
+  
+  .prediction {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  
+  .prediction div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    min-width: 0;
+  }
+  
+  .prediction span {
+    font-size: 12px;
+    color: #a28373;
+    white-space: nowrap;
+  }
+  
+  .prediction strong {
+    font-size: 19px;
+    white-space: nowrap;
+  }
+  
+  .prediction .arrow {
+    flex: 0 0 auto;
+    font-size: 20px;
+    color: #c6a493;
+  }
+  
+  .small-note {
+    margin: 18px 0 0;
+    font-size: 11px;
+    line-height: 1.7;
+    color: #a28373;
+  }
+  
+  .section-heading {
+    margin-bottom: 14px;
+  }
+  
+  .section-heading h2 {
+    margin: 0;
+    font-size: 22px;
+  }
+  
+  .add-form {
+    display: grid;
+    grid-template-columns: 1fr 110px auto;
+    gap: 8px;
+    margin-bottom: 14px;
+  }
+  
+  .enjoyment-form {
+    grid-template-columns: 1fr 110px 48px auto;
+  }
+  
+  input {
+    min-width: 0;
+    padding: 12px 13px;
+    border: 1px solid #eadbd0;
+    border-radius: 12px;
+    outline: none;
+    background: #fffdf9;
+    color: #5a4034;
+    font-size: 14px;
+  }
+  
+  input:focus {
+    border-color: #c99d82;
+  }
+  
+  button {
+    border: 0;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  
+  .add-form button {
+    padding: 0 16px;
+    border-radius: 12px;
+    background: #806052;
+    color: white;
+    font-size: 13px;
+  }
+  
+  .emoji-input {
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+  
+  .list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px 15px;
+    border-radius: 14px;
+    background: #fffdf9;
+    border: 1px solid #f0dfd1;
+  }
+  
+  .list-item > div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .list-item strong {
+    font-size: 14px;
+  }
+  
+  .list-item span {
+    font-size: 13px;
+    color: #947566;
+  }
+  
+  .delete-button {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: transparent;
+    color: #b59b8e;
+    font-size: 20px;
+  }
+  
+  .enjoyment-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+  .enjoyment-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 12px;
+    border: 1px solid #f0dfd1;
+    border-radius: 20px;
+    background: #fffdf9;
+    color: #5a4034;
+    transition: transform 0.15s ease;
+  }
+  
+  .enjoyment-card:active {
+    transform: scale(0.97);
+  }
+  
+  .emoji {
+    margin-bottom: 8px;
+    font-size: 32px;
+  }
+  
+  .enjoyment-name {
+    font-weight: 700;
+  }
+  
+  .enjoyment-count {
+    margin-top: 8px;
+    font-size: 12px;
+    color: #9a7767;
+  }
+  
+  .enjoyment-count strong {
+    font-size: 22px;
+    color: #9a624b;
+  }
+  
+  .enjoyment-price {
+    margin-top: 5px;
+    font-size: 10px;
+    color: #b39a8c;
+  }
+  
+  .empty {
+    padding: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: #b39a8c;
+  }
+  
+  .modal-backdrop {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(70, 48, 39, 0.35);
+    z-index: 100;
+  }
+  
+  .detail-modal {
+    position: relative;
+    width: min(100%, 390px);
+    padding: 34px 24px 28px;
+    border-radius: 28px;
+    background: #fffdf9;
+    text-align: center;
+    box-shadow: 0 20px 60px rgba(70, 48, 39, 0.2);
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #f5ebe4;
+    color: #806052;
+    font-size: 21px;
+  }
+  
+  .detail-emoji {
+    font-size: 54px;
+  }
+  
+  .detail-modal h2 {
+    margin: 8px 0 18px;
+    font-size: 23px;
+  }
+  
+  .detail-text {
+    margin: 5px 0;
+    color: #9a7767;
+    font-size: 13px;
+  }
+  
+  .big-count {
+    margin: 8px 0;
+    font-size: 40px;
+    font-weight: 700;
+    color: #9a624b;
+  }
+  
+  .big-count span {
+    margin-left: 5px;
+    font-size: 18px;
+  }
+  
+  .detail-money {
+    margin-top: 12px;
+    color: #a28373;
+    font-size: 12px;
+  }
+  
+  .remove-enjoyment {
+    margin-top: 20px;
+    padding: 9px 14px;
+    border-radius: 10px;
+    background: transparent;
+    color: #b08e7e;
+    font-size: 11px;
+  }
+  
+  /* スマホ */
+  @media (max-width: 520px) {
+
+    .app {
+      padding: 24px 14px 60px;
+    }
+  
+    .card {
+      padding: 20px;
+    }
+  
+    /* 予測部分 */
+    .prediction {
+      gap: 8px;
+    }
+  
+    .prediction div {
+      flex: 1 1 0;
+    }
+  
+    .prediction span {
+      white-space: nowrap;
+      font-size: 11px;
+      letter-spacing: -0.02em;
+    }
+  
+    .prediction strong {
+      font-size: 17px;
+    }
+  
+    .prediction .arrow {
+      flex: 0 0 auto;
+      margin: 0 2px;
+      font-size: 18px;
+    }
+  
+    /* 支出 */
+    .add-form {
+      grid-template-columns: minmax(0, 1fr) 96px;
+      gap: 8px;
+    }
+  
+    .add-form input:first-child {
+      min-width: 0;
+    }
+  
+    .add-form button {
+      grid-column: 1 / -1;
+      min-height: 44px;
+    }
+  
+    /* 何ができる？ */
+    .enjoyment-form {
+        grid-template-columns: minmax(0, 1fr) 52px;
+        gap: 8px;
+      }
+      
+      /* 「映画、本、旅など」 */
+      .enjoyment-form input:first-child {
+        grid-column: 1 / -1;
+      }
+      
+      /* 「1回の金額」 */
+      .enjoyment-form input:nth-child(2) {
+        grid-column: 1;
+      }
+      
+      /* 絵文字 */
+      .enjoyment-form .emoji-input {
+        grid-column: 2;
+      }
+      
+      /* 「追加」 */
+      .enjoyment-form button {
+        grid-column: 1 / -1;
+        min-height: 44px;
+      }
+    }
+    .budget-empty {
+        font-size: 36px;
+        font-weight: 700;
+        color: #9a7767;
+      }
